@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicole Estefany Céspedes Conchacalle</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:#333;
+    line-height:1.6;
+
+    background: linear-gradient(
+        -45deg,
+        #1e3c72,
+        #2a5298,
+        #4a90e2,
+        #87ceeb
+    );
+
+    background-size:400% 400%;
+    animation:fondoAnimado 12s ease infinite;
+}
+
+header{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(8px);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    animation:aparecer 1.5s ease;
+}
+
+header h1{
+    font-size:50px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+header h2{
+    margin-top:10px;
+    font-size:28px;
+}
+
+header h3{
+    margin-top:10px;
+    font-size:22px;
+}
+
+.perfil{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:20px;
+    animation:flotar 3s ease-in-out infinite;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.section{
+    background:rgba(255,255,255,0.95);
+    margin:25px 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    animation:subir 1s ease;
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #ddd;
+    padding-bottom:10px;
+}
+
+.cursos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:#eef5ff;
+    padding:18px;
+    border-radius:10px;
+    transition:all 0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#1e3c72;
+    margin-bottom:10px;
+}
+
+.card a{
+    color:#0056b3;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.redes{
+    text-align:center;
+}
+
+.redes a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    background:#1e3c72;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.redes a:hover{
+    transform:scale(1.1);
+    background:#2a5298;
+}
+
+footer{
+    background:rgba(0,0,0,0.3);
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+@keyframes fondoAnimado{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes subir{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes flotar{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+
+<h1>Nicole Estefany Céspedes Conchacalle</h1>
+
+<h2>Estudiante Universitaria</h2>
+
+<h3>Carrera: Inteligencia Artificial</h3>
+
+</header>
+
+<div class="container">
+
+<section class="section">
+
+
+<h2>Información Personal</h2>
+
+<p><strong>Nombre Completo:</strong> Nicole Estefany Céspedes Conchacalle</p>
+
+<p><strong>Ocupación:</strong> Estudiante Universitaria</p>
+
+<p><strong>Carrera:</strong> Inteligencia Artificial</p>
+
+<p><strong>Universidad:</strong> Universidad Católica San Pablo</p>
+
+
+</section>
+
+<section class="section">
+
+
+<h2>Descripción Personal</h2>
+
+<p>
+    Soy estudiante de la carrera de Inteligencia Artificial en la Universidad Católica San Pablo, con interés en la programación, el desarrollo de software y la aplicación de tecnologías innovadoras para la resolución de problemas.
+</p>
+
+<br>
+
+<p>
+    Me considero una persona responsable, perseverante y comprometida con el aprendizaje continuo. Disfruto trabajar en equipo, asumir nuevos retos académicos y desarrollar proyectos que fortalezcan mis conocimientos y habilidades.
+</p>
+
+<br>
+
+<p>
+    Mi objetivo es especializarme en áreas relacionadas con la Inteligencia Artificial, el análisis de datos y el desarrollo de sistemas inteligentes, contribuyendo mediante soluciones tecnológicas innovadoras y eficientes.
+</p>
+
+
+</section>
+
+<section class="section">
+
+
+<h2>Mis Cursos y Profesores</h2>
+
+<div class="cursos">
+
+    <div class="card">
+        <h3>Introducción a la Computación</h3>
+        <p>Profesor:</p>
+        <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">
+            Ernesto Cuadros Vargas
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Introducción a la Vida Universitaria</h3>
+        <p>Profesora:</p>
+        <a href="https://www.linkedin.com/in/lilian-moscoso-prieto-53345390/" target="_blank">
+            Lilian Moscoso Prieto
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Fundamentos Matemáticos para Computación</h3>
+        <p>Profesora:</p>
+        <a href="https://www.linkedin.com/in/meyber-yuliana-vargas-maquera-de-n%C3%BA%C3%B1ez-8224163b8/" target="_blank">
+            Meyber Vargas de Núñez
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Fundamentos de Programación</h3>
+        <p>Profesor:</p>
+        <a href="https://www.linkedin.com/in/santisteban/" target="_blank">
+            Julio Santiesteban Pablo
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Comunicación I</h3>
+        <p>Profesor:</p>
+        <a href="https://www.linkedin.com/in/angel-rodriguez-cruz-58b78b85/" target="_blank">
+            Ángel Rodríguez Cruz
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Lógica</h3>
+        <p>Profesora:</p>
+        <a href="https://www.linkedin.com/in/kristel-gisselle-loayza-cruz-abb3b039b/" target="_blank">
+            Kristel Gisselle Loayza Cruz
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+
+<h2>Habilidades</h2>
+
+<ul>
+ 
+    <li>Resolución de problemas</li>
+    <li>Trabajo en equipo</li>
+    <li>Comunicación efectiva</li>
+    <li>Responsabilidad y organización</li>
+    <li>Aprendizaje continuo</li>
+    <li>Adaptación a nuevos desafíos</li>
+</ul>
+
+
+</section>
+
+<section class="section">
+
+
+<h2>Redes Profesionales</h2>
+
+<div class="redes">
+
+    <a href="https://www.linkedin.com/in/nicole-céspedes-conchacalle-38293a415?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+        Mi LinkedIn
+    </a>
+
+    <a href="https://github.com/nicocespedes0909-jpg" target="_blank">
+        Mi GitHub
+    </a>
+
+</div>
+
+
+</section>
+
+<section class="section">
+
+
+<h2>Páginas de Mis Compañeros</h2>
+
+<ul>
+    <li>
+        <a href="https://diegosucasacacohata-wq.github.io/Diego-Fabrizio-Sucacaca-Cohata/" target="_blank">
+            Diego Sucasaca Cohata
+        </a>
+    </li>
+</ul>
+
+
+</section>
+
+<section class="section">
+
+
+<h2>Objetivos Profesionales</h2>
+
+<p>
+    Mi meta es desarrollar competencias sólidas en Inteligencia Artificial, análisis de datos y desarrollo de software, participando en proyectos innovadores que contribuyan al avance tecnológico y a la solución de problemas reales mediante el uso de herramientas informáticas.
+</p>
+
+
+</section>
+
+</div>
+
+<footer>
+    © 2026 | Nicole Estefany Céspedes Conchacalle
+</footer>
+
+</body>
+</html>
